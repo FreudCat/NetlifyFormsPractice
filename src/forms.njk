@@ -5,7 +5,10 @@ eleventyNavigation:
   key: Contact Us
   order: 1
 ---
-<form name="contactForm" action="#" netlify>
+<form name="contactForm" action="#" data-netlify-recaptcha="true" netlify-honeypot="bot-field" netlify>
+  <p class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
@@ -21,6 +24,9 @@ eleventyNavigation:
   <p>
     <label>Message: <textarea name="message"></textarea></label>
   </p>
+   </p>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
   <p>
     <button type="submit">Send</button>
   </p>
