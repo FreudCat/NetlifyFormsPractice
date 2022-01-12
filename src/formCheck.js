@@ -1,5 +1,5 @@
 const btn = document.getElementById("submitButton");
-const isChecked = document.getElementById("checkbox").innerHTML;
+const isChecked = document.getElementsByTagName("iframe").innerHTML;
 const errorMessage = document.getElementById("errorMessage");
 
 btn.addEventListener("click", e => {
