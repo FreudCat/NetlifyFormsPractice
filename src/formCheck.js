@@ -8,6 +8,8 @@ const errorMessage = document.getElementById("errorMessage");
 console.log(isChecked[0]);
   const ariaChecked = isChecked[0].contentWindow;
   console.log(ariaChecked);
+  const doc = ariaChecked.document.getElementsByTagName("span")[0];
+  console.log(doc);
 
 btn.addEventListener("click", e => {
   e.preventDefault(); 
