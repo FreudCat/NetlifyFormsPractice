@@ -6,7 +6,7 @@ const actualBox = document.getElementsByClassName("recaptcha-checkbox");
 const errorMessage = document.getElementById("errorMessage");
 
 console.log(isChecked[0]);
-  const ariaChecked = isChecked[0].contentWindow;
+  const ariaChecked = isChecked[0].contentDocument;
   console.log(ariaChecked);
 
 btn.addEventListener("click", e => {
