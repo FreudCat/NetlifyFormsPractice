@@ -8,6 +8,6 @@ const errorMessage = document.getElementById("errorMessage");
 btn.addEventListener("click", e => {
   e.preventDefault(); 
   console.log(isChecked[0]);
-  const ariaChecked = isChecked[0].contentDocument;
+  const ariaChecked = isChecked[0].contentWindow;
   console.log(ariaChecked);
 })
