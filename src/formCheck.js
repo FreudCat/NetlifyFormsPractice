@@ -1,5 +1,5 @@
 const btn = document.getElementById("submitButton");
-const isChecked = document.getElementsByTagName("iframe")[0];
+const isChecked = document.getElementsByTagName("iframe")[0].contentDocument;
 const spanbox = document.getElementsByTagName("span");
 const actualBox = document.getElementsByClassName("recaptcha-checkbox");
 const ariaChecked = isChecked.contentDocument;
