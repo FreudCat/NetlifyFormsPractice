@@ -6,5 +6,5 @@ const errorMessage = document.getElementById("errorMessage");
 
 btn.addEventListener("click", e => {
   e.preventDefault(); 
-  console.log(isChecked[0].innerHTML);
+  console.log(isChecked.length);
 })
